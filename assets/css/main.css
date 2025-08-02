@@ -5009,4 +5009,26 @@ body {
 	color: #0ba;
 	transform: scale(1.1);
   }
-  
+  .dark-footer {
+	background-color: #1f1f1f;
+	color: #ccc;
+	padding: 2.5em 0;
+	text-align: center;
+	border-top: 2px solid #333;
+}
+
+.dark-footer .icons.alt li a {
+	color: #ccc;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-footer .icons.alt li a:hover {
+	color: #00bcd4;
+	transform: scale(1.2);
+}
+
+.dark-footer p {
+	font-size: 0.9em;
+	color: #aaa;
+	margin-top: 1em;
+}
