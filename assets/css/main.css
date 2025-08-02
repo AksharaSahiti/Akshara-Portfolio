@@ -4689,435 +4689,221 @@ input, select, textarea {
 	}
 	/* ==== Custom Styling for Akshara Sahiti Portfolio ==== */
 
-/* Font and base text color */
+/* Font and Base */
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: #2E2E2E;
-	background-color: #ffffff;
-  }
-  
-  /* Section Headers */
-  h2, .major h2 {
-	color: #102A43;
-	font-weight: 600;
-  }
-  
-  /* Project Cards */
-  .posts article {
-	border: 1px solid #eee;
-	background-color: #ffffff;
-	border-radius: 8px;
-	transition: all 0.3s ease-in-out;
-  }
-  .posts article:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-	border-color: #D72638;
-  }
-  
-  /* Buttons */
-  .button {
-	background-color: #D72638;
-	border-color: #D72638;
-	color: #ffffff;
-  }
-  .button:hover {
-	background-color: #F4C95D;
-	color: #000000;
-	border-color: #F4C95D;
-  }
-  
-  /* Skill List Styling */
-  #about ul {
-	list-style: none;
-	padding: 0;
-  }
-  #about ul li {
-	background: #F9F9F9;
-	margin-bottom: 10px;
-	padding: 10px 15px;
-	border-left: 5px solid #D72638;
-	border-radius: 4px;
-	font-weight: 500;
-	color: #2E2E2E;
-  }
-  
-  /* Contact Icons Hover */
-  #contact ul.icons li a:hover {
-	color: #F4C95D;
-	transform: scale(1.1);
-	transition: all 0.2s ease-in-out;
-  }
-  
-  /* Resume Button */
-  #resume .button {
-	background-color: #D72638;
-	color: #fff;
-	border-radius: 30px;
-  }
-  #resume .button:hover {
-	background-color: #F4C95D;
-	color: #000;
-  }
-  /* === Portfolio Theme: Akshara Sahiti (Business Analyst) === */
-
-/* Font and text */
-body {
-	font-family: 'Open Sans', sans-serif;
-	color: #2E2E2E;
-	background-color: #ffffff;
-	line-height: 1.7;
-  }
-  
-  /* Section headings */
-  h2, .major h2 {
-	color: #102A43;
-	font-weight: 600;
-	font-size: 1.8rem;
-  }
-  
-  /* Intro Header Text */
-  #intro h1 {
-	font-size: 3rem;
-	font-weight: 700;
-	color: #D72638;
-  }
-  #intro p {
-	font-size: 1.1rem;
-  }
-  
-  /* Project Cards */
-  .posts article {
-	background-color: #fff;
-	border-radius: 12px;
-	border: 1px solid #eaeaea;
-	box-shadow: 0 8px 15px rgba(0,0,0,0.05);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	padding-bottom: 15px;
-  }
-  .posts article:hover {
-	transform: translateY(-6px);
-	box-shadow: 0 16px 25px rgba(0,0,0,0.08);
-  }
-  
-  /* Button Styles */
-  .button {
-	background-color: #D72638;
-	color: #fff !important;
-	border-radius: 30px;
-	border: none;
-	transition: background 0.3s ease;
-  }
-  .button:hover {
-	background-color: #F4C95D;
-	color: #000 !important;
-  }
-  
-  /* Skills Section */
-  #about ul {
-	list-style: none;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 10px;
-  }
-  #about ul li {
-	background: #F9F9F9;
-	padding: 12px 18px;
-	border-left: 4px solid #D72638;
-	border-radius: 6px;
-	font-weight: 500;
-	display: flex;
-	align-items: center;
-	gap: 8px;
-  }
-  
-  /* Resume section button */
-  #resume .button {
-	background-color: #102A43;
-  }
-  #resume .button:hover {
-	background-color: #F4C95D;
-	color: #000 !important;
-  }
-  
-  /* Contact Icons */
-  #contact .icons.alt li a {
-	font-size: 1.3rem;
-	transition: transform 0.2s ease, color 0.3s ease;
-  }
-  #contact .icons.alt li a:hover {
-	color: #F4C95D;
-	transform: scale(1.1);
-  }
-  
-  /* Header Logo */
-  #header .logo {
-	font-weight: 700;
-	font-size: 1.5rem;
-	color: #102A43 !important;
-  }
-  
-  /* Navigation Bar */
-  #nav .links a {
-	font-weight: 500;
-	color: #102A43;
-	padding: 0.5em 1em;
-  }
-  #nav .links a:hover {
-	color: #D72638;
-	border-bottom: 2px solid #D72638;
-  }
-  
-  /* Smooth image fit styling */
-  .image.fit img {
-	border-radius: 6px;
-  }
-  /* ===== FINAL VISUAL ENHANCEMENTS FOR AKSHARA SAHITI PORTFOLIO ===== */
-
-/* -------- ABOUT SECTION -------- */
-#about ul.skills-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 12px;
-	list-style: none;
-	padding: 0;
-  }
-  #about ul.skills-list li {
-	background: #f7f7f7;
-	padding: 12px 18px;
-	border-left: 5px solid #D72638;
-	border-radius: 6px;
-	font-weight: 500;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-	transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  #about ul.skills-list li:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-	background-color: #fff;
-  }
-  
-  /* -------- RESUME SECTION -------- */
-  #resume .button.small {
-	background-color: #102A43;
-	border-radius: 24px;
-	padding: 0.6em 1.5em;
-	font-size: 0.9rem;
-	border: none;
-	transition: background 0.3s ease, transform 0.3s ease;
-  }
-  #resume .button.small:hover {
-	background-color: #F4C95D;
-	color: #000 !important;
-	transform: scale(1.05);
-  }
-  
-  /* -------- CONTACT SECTION -------- */
-  #contact .contact-icons {
-	display: flex;
-	justify-content: center;
-	gap: 24px;
-	margin-top: 1em;
-  }
-  #contact .contact-icons a {
-	font-size: 1.8em;
-	color: #102A43;
-	background: #f2f2f2;
-	padding: 12px;
-	border-radius: 50%;
-	transition: all 0.3s ease-in-out;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  }
-  #contact .contact-icons a:hover {
-	background: #F4C95D;
-	color: #000;
-	transform: scale(1.15);
-  }
-  
-  /* -------- HEADINGS AND SUBTLE COLORS -------- */
-  h2.major {
-	border-bottom: 2px solid #D72638;
-	display: inline-block;
-	padding-bottom: 0.3em;
-  }
-  .post header.major h2 {
-	font-size: 2rem;
-  }
-  
-  /* -------- GENTLE GLOW ON SCROLL -------- */
-  .post {
-	transition: transform 0.4s ease, opacity 0.4s ease;
-	opacity: 0.98;
-  }
-  .post:hover {
-	transform: translateY(-3px);
-	opacity: 1;
-  }
-  
-  /* Optional: Add a little color to section background */
-  section.post {
-	margin-bottom: 3em;
-	padding-bottom: 2em;
-	border-bottom: 1px solid #e0e0e0;
-  }
-  
-  /* Fix for download resume button misalignment */
-.actions.special .button.small {
-    padding: 0.6em 1.2em;
-    font-size: 0.9em;
-    line-height: 1.5em;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  color: #2E2E2E;
+  background-color: #ffffff;
+  line-height: 1.7;
+  padding-top: 4.5em; /* for fixed nav */
 }
 
-/* Optional: Tweak icon alignment inside the button */
-.button.icon > .icon:before {
-    vertical-align: middle;
-}
-/* Resume button fix */
-.actions.special .button.small {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	gap: 0.5em;
-	padding: 0.6em 1.2em;
-	font-size: 0.9em;
-	line-height: 1.5em;
-  }
-  
-  /* Hover transitions */
-  .skills-list li,
-  .contact-icons li,
-  #resume .button {
-	transition: all 0.3s ease;
-  }
-  
-  .skills-list li:hover {
-	transform: translateX(10px);
-	color: #0ba;
-  }
-  
-  #resume .button:hover {
-	background-color: #0ba;
-	color: #fff !important;
-  }
-  
-  .contact-icons li:hover a {
-	color: #0ba;
-	transform: scale(1.1);
-  }
-  .dark-footer {
-	background-color: #1f1f1f;
-	color: #ccc;
-	padding: 2.5em 0;
-	text-align: center;
-	border-top: 2px solid #333;
+/* Section Headers */
+h2, .major h2 {
+  color: #102A43;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #D72638;
+  display: inline-block;
+  padding-bottom: 0.3em;
 }
 
-.dark-footer .icons.alt li a {
-	color: #ccc;
-	transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.dark-footer .icons.alt li a:hover {
-	color: #00bcd4;
-	transform: scale(1.2);
-}
-
-.dark-footer p {
-	font-size: 0.9em;
-	color: #aaa;
-	margin-top: 1em;
-}
-/* Center intro content more tightly */
+/* Intro Header */
 #intro {
-	padding: 5em 2em 2em 2em;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-height: 85vh;
+  padding: 5em 2em 2em 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 85vh;
+}
+#intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #D72638;
+}
+#intro p {
+  font-size: 1.1rem;
 }
 
-/* Mobile nav menu toggle icon visibility */
-@media screen and (max-width: 736px) {
-	#nav .links {
-		font-size: 1.1em;
-	}
-
-	#nav .toggle {
-		font-size: 2em;
-		top: 1.2em;
-		right: 1.5em;
-		color: #fff;
-		z-index: 10001;
-	}
-
-	#nav .links a {
-		padding: 1em 0;
-		font-size: 1.2em;
-	}
-}
-
-/* Improve desktop nav font */
-#nav .links a {
-	font-size: 1.15em;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-}
-
-@media screen and (min-width: 737px) {
-	#nav .links {
-		gap: 1.5em;
-	}
-}
-/* Footer spacing and text size */
-#footer {
-    padding: 2em 0;
-    font-size: 0.9em;
-    background: #1c1c1c;
-    color: #aaa;
-}
-
-/* Icon style cleanup */
-.icons.alt li a {
-    border: none;
-    padding: 0.4em;
-    font-size: 1.4em;
-    transition: transform 0.3s ease;
-}
-
-.icons.alt li a:hover {
-    transform: scale(1.15);
-    color: #ffc107; /* or any accent color you prefer */
-}
-
-/* Reduce icon size in top nav (optional) */
-#nav .icons .icon {
-    font-size: 1.3em;
-}
+/* Sticky Navbar */
 #nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #1c1c1c; /* Dark background for visibility */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.8em 1em;
 }
-body {
-    padding-top: 4.5em; /* adjust depending on nav height */
+#nav .links {
+  display: flex;
+  gap: 1.5em;
 }
-#nav ul.links li a {
-    font-size: 1.05em;
-    padding: 0.75em 1em;
+#nav .links li a {
+  font-size: 1.15em;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.75em 1em;
+  letter-spacing: 0.5px;
+}
+#nav .links li a:hover {
+  color: #D72638;
+  border-bottom: 2px solid #D72638;
 }
 #nav .toggle {
-    font-size: 1.5em;
+  font-size: 1.5em;
+  color: #fff;
 }
-/* === Scroll to Top Button === */
+
+/* Navigation Icons */
+#nav .icons .icon {
+  font-size: 1.3em;
+}
+
+/* Responsive Nav */
+@media screen and (max-width: 736px) {
+  #nav .links li a {
+    font-size: 1.2em;
+    padding: 1em;
+  }
+  #header .logo {
+    font-size: 1.4em;
+  }
+  #nav .toggle {
+    font-size: 2em;
+    top: 1.2em;
+    right: 1.5em;
+    z-index: 10001;
+  }
+}
+
+/* Header Logo */
+#header .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+
+/* Project Cards */
+.posts article {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 15px;
+}
+.posts article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 25px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+.button {
+  background-color: #D72638;
+  color: #fff !important;
+  border-radius: 30px;
+  border: none;
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background-color: #F4C95D;
+  color: #000 !important;
+}
+.button.icon > .icon:before {
+  vertical-align: middle;
+}
+
+/* Resume Button Fix */
+#resume .button.small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  height: 2.8em;
+  background-color: #102A43;
+}
+#resume .button.small:hover {
+  background-color: #F4C95D;
+  color: #000 !important;
+  transform: scale(1.05);
+}
+
+/* Skills Section */
+#about ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+#about ul.skills-list li {
+  background: #f7f7f7;
+  padding: 12px 18px;
+  border-left: 5px solid #D72638;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+#about ul.skills-list li:hover {
+  transform: translateY(-3px);
+  background-color: #fff;
+}
+
+/* Contact Icons */
+#contact .contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 1em;
+}
+#contact .contact-icons a {
+  font-size: 1.8em;
+  color: #102A43;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+#contact .contact-icons a:hover {
+  background: #F4C95D;
+  color: #000;
+  transform: scale(1.15);
+}
+
+/* Smooth image fit */
+.image.fit img {
+  border-radius: 6px;
+}
+
+/* Footer */
+#footer {
+  font-size: 0.85em;
+  padding: 1.5em 1em;
+  background: #111;
+  text-align: center;
+  color: #aaa;
+  margin-top: 2em;
+}
+#footer .icons.alt li a {
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+#footer .icons.alt li a:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+#footer p {
+  margin-top: 1em;
+  font-size: 0.85em;
+}
+
+/* Scroll to Top Button */
 .scroll-top {
   position: fixed;
   bottom: 20px;
@@ -5134,53 +4920,6 @@ body {
   display: none;
   transition: background-color 0.3s ease;
 }
-
 .scroll-top:hover {
   background-color: #e94c4b;
 }
-
-/* === Sticky Header === */
-#nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: #1b1b1b;
-  padding: 0.8em 1em;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-}
-
-/* === Responsive Navigation Toggle === */
-#nav .icon {
-  font-size: 1.5em;
-}
-
-@media screen and (max-width: 736px) {
-  #nav .links li a {
-    font-size: 1.2em;
-    padding: 0.75em 1em;
-  }
-
-  #header .logo {
-    font-size: 1.4em;
-  }
-}
-
-/* === Footer Fix === */
-#footer {
-  font-size: 0.85em;
-  padding: 2em 1em;
-  background: #111;
-  text-align: center;
-  color: #aaa;
-}
-
-/* Resume Button Fix */
-#resume .actions .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.8em;
-  padding: 0 1.5em;
-  font-size: 0.95em;
-}
-
