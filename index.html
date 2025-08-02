@@ -138,6 +138,8 @@
     </ul>
     <p style="font-size: 0.9em; color: #aaa;">&copy; Akshara Sahiti · 2025. Crafted with purpose and passion.</p>
 </footer>
+<!-- Scroll to Top Button -->
+<button class="scroll-top" title="Back to top">&#8679;</button>
 
 
 </div>
@@ -151,7 +153,26 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
+<script>
+// Scroll to Top Button
+const scrollBtn = document.querySelector('.scroll-top');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+});
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 </body>
 </html>
+
+
+</body>
+</html>
+
 
 
