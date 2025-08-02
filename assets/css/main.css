@@ -1,48 +1,70 @@
+/* Base Reset */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("fontawesome-all.min.css");
 
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
-
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output,
-ruby, section, summary, time, mark, audio, video {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
+/* Body and Typography */
 body {
-  line-height: 1;
   font-family: 'Open Sans', sans-serif;
   color: #2E2E2E;
   background-color: #ffffff;
+  line-height: 1.7;
   padding-top: 4.5em;
 }
 
-/* Intro */
+/* Sticky Navbar */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #1b1b1b;
+  padding: 0.8em 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+#nav .links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  list-style: none;
+}
+
+#nav .links li a {
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75em 1em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#nav .links li a:hover {
+  background-color: #D72638;
+  color: #fff;
+}
+
+/* Header */
+#header .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Intro Section */
 #intro {
-  min-height: 85vh;
+  padding: 5em 2em 2em 2em;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5em 2em 2em 2em;
-  text-align: center;
+  min-height: 85vh;
 }
 
 #intro h1 {
@@ -53,130 +75,168 @@ body {
 
 #intro p {
   font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Sticky Navbar */
-#nav {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background: #1b1b1b;
-  padding: 0.8em 1em;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+.actions {
+  margin-top: 2rem;
 }
 
-#nav .links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
-}
-
-#nav .links li a {
-  font-size: 1.15em;
-  font-weight: 500;
-  color: #fff;
-  padding: 0.75em 1em;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-}
-
-#nav .links li a:hover {
-  color: #D72638;
-  border-bottom: 2px solid #D72638;
-}
-
-/* Nav Toggle */
-#navPanelToggle {
-  display: none;
-  position: fixed;
-  top: 0.75rem;
-  right: 0.75rem;
+.button {
   background-color: #D72638;
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 0.5rem 1rem;
-  z-index: 10001;
+  color: #fff !important;
+  padding: 0.7em 1.5em;
+  border-radius: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 5px;
-}
-
-#navPanelToggle:before {
-  content: '\f0c9';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  margin-right: 0.5rem;
-}
-
-/* Nav Panel */
-#navPanel {
-  display: none;
-  background: #1b1b1b;
-  color: #fff;
-  width: 80%;
-  max-width: 20rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  padding: 3rem 2rem;
-  z-index: 10002;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-}
-
-body.is-navPanel-visible #navPanel {
-  display: block;
-  transform: translateX(0);
-}
-
-#navPanel .links {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
-}
-
-#navPanel .links li a {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
   text-decoration: none;
 }
 
-/* Show toggle icon on small screens */
-@media screen and (max-width: 980px) {
-  #navPanelToggle {
-    display: block;
-  }
-
-  #nav {
-    display: none;
-  }
+.button:hover {
+  background-color: #F4C95D;
+  color: #000 !important;
 }
 
-/* Resume button */
+/* Section Headers */
+h2, .major h2 {
+  color: #102A43;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #D72638;
+  display: inline-block;
+  padding-bottom: 0.3em;
+  margin-bottom: 1rem;
+}
+
+/* Project Cards */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2em;
+  padding: 2em;
+}
+
+.posts article {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1em;
+}
+
+.posts article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.08);
+}
+
+.image.fit img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* About Skills */
+#about ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+#about ul.skills-list li {
+  background: #f7f7f7;
+  padding: 12px 18px;
+  border-left: 5px solid #D72638;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+#about ul.skills-list li:hover {
+  transform: translateY(-3px);
+  background-color: #fff;
+}
+
+/* Resume Button */
 #resume .button.small {
-  background-color: #102A43;
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
   padding: 0.6em 1.2em;
-  border-radius: 30px;
   font-size: 0.95em;
+  height: 2.8em;
+  background-color: #102A43;
 }
 
 #resume .button.small:hover {
   background-color: #F4C95D;
-  color: #000;
+  color: #000 !important;
   transform: scale(1.05);
 }
 
-/* Scroll-to-top button */
+/* Contact Icons */
+#contact .contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 1em;
+}
+
+#contact .contact-icons a {
+  font-size: 1.8em;
+  color: #102A43;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#contact .contact-icons a:hover {
+  background: #F4C95D;
+  color: #000;
+  transform: scale(1.15);
+}
+
+/* Footer */
+#footer {
+  font-size: 0.85em;
+  padding: 1.5em 1em;
+  background: #111;
+  text-align: center;
+  color: #aaa;
+  margin-top: 2em;
+}
+
+#footer .icons.alt li a {
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#footer .icons.alt li a:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+#footer p {
+  margin-top: 1em;
+  font-size: 0.85em;
+}
+
+/* Scroll to Top Button */
 .scroll-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #ff5c57;
+  background-color: #D72638;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -190,4 +250,81 @@ body.is-navPanel-visible #navPanel {
 
 .scroll-top:hover {
   background-color: #e94c4b;
+}
+
+/* Responsive Mobile Navigation Toggle */
+#navPanelToggle {
+  display: none;
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10001;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #D72638;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#navPanelToggle.alt {
+  background-color: #fff;
+  color: #111;
+}
+
+@media screen and (max-width: 980px) {
+  #navPanelToggle {
+    display: block;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #navPanel {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 18rem;
+    height: 100%;
+    background: #fff;
+    color: #000;
+    z-index: 10002;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+
+  body.is-navPanel-visible #navPanel {
+    transform: translateX(0);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  }
+
+  #navPanel nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #navPanel nav ul li {
+    margin: 1rem 0;
+  }
+
+  #navPanel nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+  }
+
+  #navPanel .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #111;
+    text-decoration: none;
+  }
 }
