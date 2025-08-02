@@ -4590,30 +4590,39 @@ h2, .major h2 {
 
 /* Mobile styles */
 @media screen and (max-width: 980px) {
+  #nav {
+    display: block !important;
+    background-color: #1b1b1b;
+    padding: 1em;
+    text-align: center;
+  }
+
   #nav .links {
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav .links li {
+    display: block;
+    width: 100%;
   }
 
   #nav .links li a {
-    font-size: 1.4em;
+    display: block;
+    font-size: 1.3em;
     padding: 1em;
     background-color: #2e2e2e;
     color: #fff;
     border-radius: 6px;
-    text-align: center;
-    display: block;
-    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
 
   #nav .links li a:hover {
     background-color: #D72638;
     color: #fff;
-  }
-}
-@media screen and (max-width: 980px) {
-  #nav {
-    display: block !important;
   }
 }
