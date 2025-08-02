@@ -4593,17 +4593,31 @@ h2, .major h2 {
   #nav .links {
     flex-direction: column;
     align-items: center;
+    gap: 1em; /* spacing between menu items */
+  }
+
+  #nav .links li a {
+    font-size: 1.5em;          /* Bigger font */
+    padding: 1.2em 2em;        /* Bigger tap area */
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    background-color: #2e2e2e; /* Optional: background for mobile menu items */
+  }
+
+  #nav .links li a:hover {
+    background-color: #D72638;
+    color: #fff;
+  }
+
+  #header .logo {
+    font-size: 1.6em;
   }
 
   #nav .toggle {
-    font-size: 2em;
-    display: block;
+    font-size: 2.2em;
+    padding: 1em;
     color: #fff;
-    padding: 1em;
-  }
-
-  #nav .links a {
-    font-size: 1.3em;
-    padding: 1em;
   }
 }
+
