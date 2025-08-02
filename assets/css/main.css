@@ -5117,4 +5117,70 @@ body {
 #nav .toggle {
     font-size: 1.5em;
 }
+/* === Scroll to Top Button === */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff5c57;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  display: none;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #e94c4b;
+}
+
+/* === Sticky Header === */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #1b1b1b;
+  padding: 0.8em 1em;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* === Responsive Navigation Toggle === */
+#nav .icon {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 736px) {
+  #nav .links li a {
+    font-size: 1.2em;
+    padding: 0.75em 1em;
+  }
+
+  #header .logo {
+    font-size: 1.4em;
+  }
+}
+
+/* === Footer Fix === */
+#footer {
+  font-size: 0.85em;
+  padding: 2em 1em;
+  background: #111;
+  text-align: center;
+  color: #aaa;
+}
+
+/* Resume Button Fix */
+#resume .actions .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.8em;
+  padding: 0 1.5em;
+  font-size: 0.95em;
+}
 
