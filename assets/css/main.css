@@ -4589,34 +4589,21 @@ h2, .major h2 {
 }
 
 /* Mobile styles */
-@media screen and (max-width: 768px) {
-  #nav .links {
-    flex-direction: column;
-    align-items: center;
-    gap: 1em; /* spacing between menu items */
-  }
-
-  #nav .links li a {
-    font-size: 1.5em;          /* Bigger font */
-    padding: 1.2em 2em;        /* Bigger tap area */
-    border-radius: 6px;
-    width: 100%;
-    text-align: center;
-    background-color: #2e2e2e; /* Optional: background for mobile menu items */
-  }
-
-  #nav .links li a:hover {
-    background-color: #D72638;
-    color: #fff;
-  }
-
-  #header .logo {
-    font-size: 1.6em;
-  }
-
-  #nav .toggle {
-    font-size: 2.2em;
+@media screen and (max-width: 980px) {
+  #navPanel .links li a {
+    font-size: 1.4em;
     padding: 1em;
+    background-color: #2e2e2e; /* Optional dark background */
+    color: #fff;
+    border-radius: 6px;
+    margin-bottom: 0.75em;
+    text-align: center;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  #navPanel .links li a:hover {
+    background-color: #D72638;
     color: #fff;
   }
 }
