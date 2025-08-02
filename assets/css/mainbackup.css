@@ -1,0 +1,211 @@
+/* ==== Base Styling ==== */
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #2E2E2E;
+	background-color: #ffffff;
+	line-height: 1.7;
+	padding-top: 4.5em;
+}
+
+/* ==== Header and Logo ==== */
+#header .logo {
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #102A43 !important;
+}
+
+/* ==== Sticky Navigation ==== */
+#nav {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: #1c1c1c;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+	padding: 0.8em 1em;
+}
+
+#nav .links {
+	display: flex;
+	gap: 1.5em;
+}
+
+#nav .links a {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	font-size: 1.05em;
+	padding: 0.75em 1em;
+	border: none;
+}
+
+#nav .links a:hover {
+	color: #F4C95D;
+	border-bottom: 2px solid #F4C95D;
+}
+
+#nav .icons .icon {
+	font-size: 1.3em;
+}
+
+/* ==== Mobile Nav ==== */
+@media screen and (max-width: 736px) {
+	#nav .links li a {
+		font-size: 1.2em;
+		padding: 1em 0;
+	}
+	#nav .toggle {
+		font-size: 2em;
+		top: 1.2em;
+		right: 1.5em;
+		color: #fff;
+	}
+	#header .logo {
+		font-size: 1.4em;
+	}
+}
+
+/* ==== Intro Section ==== */
+#intro {
+	padding: 5em 2em 2em 2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 85vh;
+}
+
+#intro h1 {
+	font-size: 3rem;
+	color: #D72638;
+	font-weight: 700;
+}
+
+#intro p {
+	font-size: 1.1rem;
+}
+
+/* ==== Section Headings ==== */
+h2, .major h2 {
+	color: #102A43;
+	font-weight: 600;
+	font-size: 1.8rem;
+	border-bottom: 2px solid #D72638;
+	display: inline-block;
+	padding-bottom: 0.3em;
+}
+
+/* ==== Project Cards ==== */
+.posts article {
+	background-color: #fff;
+	border-radius: 12px;
+	border: 1px solid #eaeaea;
+	box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	padding-bottom: 15px;
+}
+
+.posts article:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 16px 25px rgba(0,0,0,0.08);
+}
+
+.image.fit img {
+	border-radius: 6px;
+}
+
+/* ==== About Skills ==== */
+#about ul.skills-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 12px;
+	list-style: none;
+	padding: 0;
+}
+
+#about ul.skills-list li {
+	background: #f7f7f7;
+	padding: 12px 18px;
+	border-left: 5px solid #D72638;
+	border-radius: 6px;
+	font-weight: 500;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#about ul.skills-list li:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+	background-color: #fff;
+}
+
+/* ==== Buttons ==== */
+.button {
+	background-color: #D72638;
+	color: #fff;
+	border-radius: 30px;
+	border: none;
+	transition: background 0.3s ease;
+}
+
+.button:hover {
+	background-color: #F4C95D;
+	color: #000 !important;
+}
+
+/* ==== Resume Button Fix ==== */
+#resume .actions .button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.8em;
+	padding: 0 1.5em;
+	font-size: 0.95em;
+	line-height: 1;
+}
+
+#resume .button.small:hover {
+	transform: scale(1.05);
+}
+
+/* ==== Contact Icons ==== */
+#contact .contact-icons {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-top: 1em;
+}
+
+#contact .contact-icons a {
+	font-size: 1.6em;
+	color: #102A43;
+	background: #f2f2f2;
+	padding: 10px;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#contact .contact-icons a:hover {
+	background: #F4C95D;
+	color: #000;
+	transform: scale(1.15);
+}
+
+/* ==== Footer ==== */
+#footer {
+	font-size: 0.85em;
+	padding: 2em 1em;
+	background: #111;
+	text-align: center;
+	color: #aaa;
+}
+
+#footer .icons.alt li a {
+	color: #aaa;
+	font-size: 1.3em;
+}
+
+#footer .icons.alt li a:hover {
+	color: #ffc107;
+	transform: scale(1.2);
+}
