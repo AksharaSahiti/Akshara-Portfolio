@@ -5074,4 +5074,47 @@ body {
 		gap: 1.5em;
 	}
 }
+/* Footer spacing and text size */
+#footer {
+    padding: 2em 0;
+    font-size: 0.9em;
+    background: #1c1c1c;
+    color: #aaa;
+}
+
+/* Icon style cleanup */
+.icons.alt li a {
+    border: none;
+    padding: 0.4em;
+    font-size: 1.4em;
+    transition: transform 0.3s ease;
+}
+
+.icons.alt li a:hover {
+    transform: scale(1.15);
+    color: #ffc107; /* or any accent color you prefer */
+}
+
+/* Reduce icon size in top nav (optional) */
+#nav .icons .icon {
+    font-size: 1.3em;
+}
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1c1c1c; /* Dark background for visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+body {
+    padding-top: 4.5em; /* adjust depending on nav height */
+}
+#nav ul.links li a {
+    font-size: 1.05em;
+    padding: 0.75em 1em;
+}
+#nav .toggle {
+    font-size: 1.5em;
+}
 
